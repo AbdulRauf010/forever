@@ -4,6 +4,7 @@ import Collection from "./pages/Collection";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import Navbar from "./components/Navbar";
 import Orders from "./pages/Orders";
 import PageNotFound from "./pages/PageNotFound";
 import PlaceOrder from "./pages/PlaceOrder";
@@ -13,6 +14,8 @@ import { Route, Routes } from "react-router-dom";
 const App = () => {
   return (
     <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+
+    <Navbar/>
 
       <Routes>
         <Route path="/" element={<Home/>} />
